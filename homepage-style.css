@@ -45,6 +45,7 @@ body {
 
 header {
     background-color: #0f1e2c;
+    position:sticky; 
 }
 
 nav{
