@@ -222,7 +222,7 @@ class UserView {
 
     document.getElementById("logout-btn").addEventListener("click", () => {
       this.model.setCurrentUser(null);
-      window.location.href = "homepahe.html"; 
+      window.location.href = "index.html"; 
     });
 
   }
