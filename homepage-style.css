@@ -315,5 +315,20 @@ footer {
   color: #fff;
 }
 
-
+@media screen and (max-width: 435px) {
+    #logo {
+        height: 90px;
+        padding-top: 32px;
+    }
+    nav a {
+        margin-left: 9px;
+        margin-right: 9px;
+    }
+    .description h2 {
+        padding-top: 35px;
+    }
+    .missionVision {
+        height: 600px;
+    }
+}
 
