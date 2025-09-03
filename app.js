@@ -321,7 +321,7 @@ class Controller {
     params.set("gwa", fullUser .education.gwa || "");
     params.set("discount", fullUser .education.discount || "");
 
-    window.location.href = `homepage.html?${params.toString()}&showProfile=true`;
+    window.location.href = `index.html?${params.toString()}&showProfile=true`;
   } else {
     this.view.showError("Invalid email or password.");
   }
@@ -370,7 +370,7 @@ handleEducation(details) {
     params.set("gwa", updatedUser .education.gwa || "");
     params.set("discount", updatedUser .education.discount || "");
 
-    window.location.href = `homepage.html?${params.toString()}&showProfile=true`;
+    window.location.href = `index.html?${params.toString()}&showProfile=true`;
   }
 }
 
