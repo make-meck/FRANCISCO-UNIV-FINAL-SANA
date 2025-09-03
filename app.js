@@ -38,15 +38,12 @@ class InputData {
     };
     this.users.push(newUser );
     this.saveUsers();
-    console.log("User  registered:", newUser );
     return true;
   }
 
   findUser (email, password) {
     email = email.trim().toLowerCase();
-    console.log("Searching for user:", email, password);
     const foundUser  = this.users.find(u => u.email === email && u.password === password);
-    console.log("Found user:", foundUser );
     return foundUser ;
   }
 
@@ -108,7 +105,6 @@ class UserView {
   bindPersonal(handler) {
     document.getElementById("personaldeets-form").addEventListener("submit", e => {
       e.preventDefault();
-      console.log("Personal details form submitted");
       handler({
         fullName: document.getElementById("full-name").value.trim(),
         dob: document.getElementById("dob").value,
@@ -226,7 +222,7 @@ class UserView {
 
     document.getElementById("logout-btn").addEventListener("click", () => {
       this.model.setCurrentUser(null);
-      window.location.href = "homepage.html"; // redirect to homepage
+      window.location.href = "index.html"; 
     });
 
   }
@@ -334,7 +330,6 @@ class Controller {
 
 
   handlePersonal(details) {
-  console.log("handlePersonal called with", details);
   const user = this.model.getCurrentUser ();
   if (user) {
     
